@@ -1,0 +1,13 @@
+name: Build and test my app  # Descriptive name remains unchanged
+
+on: [push]  # Trigger on code pushes remains unchanged
+
+jobs:
+  build:
+    runs-on: macos-latest  # Specify macOS virtual machine
+
+    steps:
+      - uses: actions/checkout@v3  # Check out repository code
+      - run: npm install  # Install dependencies
+      - run: npm run build  # Build the application
+      - run: npm test  # Run tests
