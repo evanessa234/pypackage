@@ -8,8 +8,8 @@ setup(
     description='Testing out python library creation',
     packages=find_packages(),  # Automatically finds packages/modules
     install_requires=[        # List any required dependencies
-        'numpy',
-        'pandas',
-        # ...
+        'random',
+        'setup',
+        'find_packages'
     ],
 )
